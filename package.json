@@ -1,0 +1,27 @@
+{
+  "name": "cse341-apicourse-code",
+  "version": "1.0.0",
+  "description": "code to give to students for the cse341 course",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev-start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugolalmeida/CSE341-Web-Services.git"
+  },
+  "author": "Hugo L. Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugolalmeida/CSE341-Web-Services/issues"
+  },
+  "homepage": "https://github.com/hugolalmeida/CSE341-Web-Services#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
