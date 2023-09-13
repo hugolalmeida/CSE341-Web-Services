@@ -1,6 +1,6 @@
 displayJoke = (req, res) => {
     const data =
-      'How did the telephone propose to his girlfriend? ...he gave her a ring.';
+      'Hugo L. ALmeida';
     res.status(200).send(data);
   };
   
