@@ -1,11 +1,11 @@
 displayJoke = (req, res) => {
     const data =
-      'Hugo L. ALmeida';
+      '<h1>Hugo L. Almeida</h1>';
     res.status(200).send(data);
   };
   displayLuffy = (req, res) => {
     const data =
-      'Luffy';
+      '<h1>Luffy</h1>';
     res.status(200).send(data);
   };
   displayData = (req, res) => {

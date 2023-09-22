@@ -1,8 +1,12 @@
-const routes = require('express').Router();
-const jokes = require('../controllers/');
+const express = require('express');
+const router = express.Router();
+// const jokes = require('../controllers/');
 
-routes.get('/', jokes.displayJoke);
-routes.get('/luffy', jokes.displayLuffy);
-routes.get('/data', jokes.displayData);
+// routes.get('/', jokes.displayJoke);
+// routes.get('/luffy', jokes.displayLuffy);
+// routes.get('/data', jokes.displayData);
 
-module.exports = routes;
+router.use('/contacts', require('./contacts'));
+
+
+module.exports = router;
