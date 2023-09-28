@@ -28,9 +28,8 @@ const getDb = () => {
 
 module.exports = {
   initDb,
-  getDb,
+  getDb
 };
-
 
 // It is connecting to the database but Idk how to use it to link getting the collection
 
@@ -60,4 +59,3 @@ module.exports = {
 // //   run().catch(console.dir);
 
 // module.exports = connectDB;
-

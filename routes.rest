@@ -16,6 +16,42 @@ GET http://localhost:3000/contacts/650da17c580a3e6050fc46b6 HTTP/1.1
 ###
 GET https://cse-341-test-zcym.onrender.com/contacts HTTP/1.1
 
+###
+GET https://cse-341-test-zcym.onrender.com/contacts/650da17c580a3e6050fc46b6 HTTP/1.1
+
+###
+GET https://cse-341-test-zcym.onrender.com/contacts/650da22e580a3e6050fc46b7 HTTP/1.1
+
+###
+GET https://cse-341-test-zcym.onrender.com/contacts/650d9089580a3e6050fc46b4 HTTP/1.1
+
+###
+PUT http://localhost:8080/contacts/6515a0701b37f0769842f3ac HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Sarah", 
+"lastName":"Birch", 
+"email":"test@gmail.com", 
+"favoriteColor":"Green", 
+"birthday":"12/12/20"
+}
+
+###
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Luffy", 
+"lastName":"Monkey D.", 
+"email":"aWeaver@test.com", 
+"favoriteColor":"Red", 
+"birthday":"IDK"
+}
+
+###
+DELETE http://localhost:8080/contacts/6515a0701b37f0769842f3ac HTTP/1.1
+
 # ###
 # GET http://localhost:3000/luffy HTTP/1.1
 

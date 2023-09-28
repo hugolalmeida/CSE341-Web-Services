@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "firstName": "Hugo",
+    "lastName": "Almeida",
+    "email": "hugoleonardopokemon@gmail.com",
+    "favoriteColor": "purple",
+    "birthday": "09/07/1999"
+  },
+  "contact2": {
+    "firstName": "Emanoelly",
+    "lastName": "Almeida",
+    "email": "manugadu@gmail.com",
+    "favoriteColor": "gray",
+    "birthday": "01/06/2006"
+  },
+  "contact3": {
+    "firstName": "Victor",
+    "lastName": "Almeida",
+    "email": "victor24@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "11/24/1996"
+  }
+}
