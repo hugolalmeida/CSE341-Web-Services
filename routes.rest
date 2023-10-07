@@ -5,6 +5,10 @@ GET http://localhost:3000/ HTTP/1.1
 GET http://localhost:8080/contacts HTTP/1.1
 
 ###
+GET http://localhost:8080/api-docs HTTP/1.1
+
+
+###
 GET http://localhost:3000/contacts/650d9089580a3e6050fc46b4 HTTP/1.1
 
 ###
@@ -51,6 +55,9 @@ content-type: application/json
 
 ###
 DELETE https://cse-341-test-zcym.onrender.com/contacts/65186d14934c5ce8c473e810 HTTP/1.1
+
+###
+GET https://cse-341-test-zcym.onrender.com/api-docs HTTP/1.1
 
 # ###
 # GET http://localhost:3000/luffy HTTP/1.1
