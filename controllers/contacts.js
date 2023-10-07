@@ -2,32 +2,28 @@ const mongodb = require('../db/connection');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
-  try{
+  
   const result = await mongodb.getDb().db().collection('contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
   });
-} catch(err){
-  res.status(500).json({message: err.message});
-}
+
 };
 
 const getSingle = async (req, res, next) => {
-  try{
+  
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
   });
-} catch(err){
-  res.status(500).json(err);
-}
+
 };
 
 const createContact = async (req, res) => {
-  try{
+  
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -41,9 +37,7 @@ const createContact = async (req, res) => {
   } else {
     res.status(500).json(response.error || 'Some error occurred while creating the contact.');
   }
-} catch(err){
-  res.status(500).json(err);
-}
+
 };
 
 const updateContact = async (req, res) => {
