@@ -12,7 +12,7 @@ const app = express();
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', 'https://cse-341-test-zcym.onrender.com');
     res.setHeader(
       'Access-Control-Allow-Headers',
       'Origin, X-Request-With, Content-Type, Accept, Z-Key'
